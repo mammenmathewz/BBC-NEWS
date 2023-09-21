@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>BBC</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: black; color: white;" id="navBar">
+    <div class="container-fluid">
+      <div style="margin-right: 50px;">
+        <a class="navbar-brand" href="#"><img class="object-fit-contain"
+            src="https://static.wixstatic.com/media/48fc07_240ad81b8f16480bbf10d23ecc2cd5e4~mv2.jpg/v1/crop/x_76,y_143,w_936,h_320/fill/w_996,h_340,al_c,lg_1,q_80,enc_auto/BBC%20logo.jpg"
+            width="120px" height="70px" alt=""></a>
+        <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+          class="bi bi-person-fill" viewBox="0 0 16 16">
+          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+        </svg><span>Sign in</span>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item nav-link">
+            <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fw-bold"
+              aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item nav-link">
+            <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fw-bold"
+              aria-current="page" href="#">News</a>
+          </li>
+          <li class="nav-item nav-link">
+            <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fw-bold"
+              aria-current="page" href="#">Sports</a>
+          </li>
+          <li class="nav-item nav-link">
+            <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fw-bold"
+              aria-current="page" href="#">Reel</a>
+          </li>
+          <li class="nav-item nav-link">
+            <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fw-bold"
+              aria-current="page" href="#">Worklife</a>
+          </li>
+          <li class="nav-item nav-link">
+            <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fw-bold"
+              aria-current="page" href="#">Travel</a>
+          </li>
+          <li class="nav-item nav-link">
+            <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fw-bold"
+              aria-current="page" href="#">Futures</a>
+          </li>
+          <li class="nav-item nav-link">
+            <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fw-bold"
+              aria-current="page" href="#">Culture</a>
+          </li>
+          <li class="nav-item nav-link">
+
+            <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fw-bold"
+              type="button" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16" id="more">
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+              </svg></a>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2  " type="search" placeholder="BBC Search" aria-label="Search">
+
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div style="display: flex; justify-content: space-between;">
+    <h2 style="margin-left: 1%;">Welcome to BBC.com</h2>
+    <h4 style="color: #9f9f9f; padding-right: 1% ; padding-top: 1%;" id="day"></h4>
+  </div>
+
+  <div class="container" style="display: flex; padding-top: 3%" id="smallNews">
+    <div class="col-6 roe-col-md-1" style="padding-top: 5%;padding-right: 1%;" id="main-img">
+      <div class="card bg-dark text-white">
+        <img style="filter: brightness(40%);"
+          src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltd1b359bff3f0623d/640c590fd092762976c52eaf/GOAL_-_Multiple_Images_-_3_Stacked_-_Facebook.jpg"
+          class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h4 class="card-title">Nagorno-Karabakh conflict</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-div">
+      <div class="row row-cols-1 row-cols-md-2 g-4 col-12" style="padding-top: 5%">
+        <div class="col">
+          <div class="card bg-dark text-white">
+            <img style="filter: brightness(40%);"
+              src="https://static.timesofisrael.com/www/uploads/2023/09/AP23256173814242-e1694598628408.jpg"
+              class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h6 class="card-title">Kim Jong Un-Putin talks: What do the optics tell us?</h6>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white">
+            <img style="filter: brightness(40%);"
+              src="https://i2-prod.chroniclelive.co.uk/incoming/article27737091.ece/ALTERNATES/s615/0_Manchester-City-Training-and-Press-Conference-City-Football-Academy-Monday-September-18th.jpg"
+              class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h6 class="card-title">Who is the Man City captain?</h6>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white">
+            <img style="filter: brightness(40%);"
+              src="https://i.pinimg.com/1200x/5d/07/7b/5d077b37cc851bac33d37ff9b1200401.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h6 class="card-title">Rise of influencer</h6>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white">
+            <img style="filter: brightness(40%);"
+              src="https://media.cnn.com/api/v1/images/stellar/prod/230313150026-gary-lineker-bbc-2.jpg?c=original"
+              class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">F.A cup</h5>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-left: 1%;  margin-right: 1%;">
+
+    <h4 style=" border-left: solid red; margin-top: 2%; padding: 1%; ">News</h4>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card-noborder">
+          <img
+            src="https://ichef.bbci.co.uk/news/976/cpsprodpb/5D3F/production/_131117832_2_siamak_namazi_morad-tahbaz_emad_shargi.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Who is being freed in the Iran prisoner swap?</h5>
+            <p class="card-text">Five Americans who had been jailed for years in Iran are flying back home on Monday as
+              a part of a controversial prisoner swap.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-noborder">
+          <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/6180/production/_131106942_brand.jpg.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Russell Brand: Met Police receive report of alleged sexual assault in 2003</h5>
+            <p class="card-text">The Metropolitan Police has received a report of an alleged sexual assault in
+              .................</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-noborder">
+          <img
+            src="https://ichef.bbci.co.uk/news/976/cpsprodpb/2348/production/_131123090_gettyimages-1613598808.jpg.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">United Nations General Assembly leaders look for unity over crises</h5>
+            <p class="card-text">It is called the United Nations - but right now it seems anything but united.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 1%;">
+      <div class="col">
+        <div class="card-noborder">
+          <img
+            src="https://ichef.bbci.co.uk/news/976/cpsprodpb/AE62/production/_131124644_gettyimages-1573206994.jpg.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Japan population: One in 10 people now aged 80 or older</h5>
+            <p class="card-text">For the first time ever, more than one in 10 people in Japan are now aged 80 or older.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-noborder">
+          <img src="https://www.hindustantimes.com/ht-img/img/2023/08/24/550x309/isro_1692883230017_1692883230340.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Chandrayaan-3: How important are India's Moon mission findings?</h5>
+            <p class="card-text">Last month, India made history when it became the first country.....</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-noborder">
+          <img
+            src="https://ichef.bbci.co.uk/news/976/cpsprodpb/D892/production/_131124455_gettyimages-1663931480.jpg.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Elon Musk: Social media platform X could go behind paywall</h5>
+            <p class="card-text">Elon Musk has suggested that all users of X, formerly called Twitter, may have to pay
+              for access to the platform.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div style=" margin-left: 1%; margin-right: 1%;">
+    <h4 style="margin-top: 2%; border-left: #f8f802 solid; padding: 1%;">Sport</h4>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 1%;">
+      <div class="col">
+        <div class="card-noborder">
+          <img
+            src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/9492/production/_131143083_ioanetry_reu.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Italy produce stirring fightback to beat Uruguay</h5>
+            <p class="card-text">Italy overturn a 10-point half-time deficit to beat Uruguay and go top of Pool A at the Rugby World Cup.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-noborder">
+          <img src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/14EE6/production/_131143758_gettyimages-1677978372.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bellingham strikes injury-time Real Madrid winner</h5>
+            <p class="card-text">Jude Bellingham scores an injury-time tap-in as Real Madrid leave it late to beat Champions League debutants Union Berlin.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-noborder">
+          <img
+            src="https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/vivo/live/images/2023/9/20/9c8c6968-5ed6-4a90-a1ad-b689d1d6c157.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Watford 2-2 West Brom</h5>
+            <p class="card-text">Watford have had Ryan Porteus limp off with a knock.Into the final 15 minutes. Will there be a winner?</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div style="width: 50%">
+      <a class="weatherwidget-io" href="https://forecast7.com/en/10d1176d26/koonammavu/" data-label_1="KOONAMMAVU"
+        data-label_2="WEATHER" data-theme="original" data-basecolor="#ffffff" data-textcolor="#000101"
+        data-cloudcolor="#dadada">KOONAMMAVU WEATHER</a>
+      <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+      </script>
+
+    </div>
+    <div>
+      <div style="margin-top: 2%; height: 20%; border-radius: 5px;  ">
+        <div style="display: flex; justify-content: space-between; ">
+          <div>
+            <h1>REEL</h1>
+            <p>The most amazing videos from the BBC</p>
+          </div>
+          <div style="margin-top: 1%;  margin-right: 1%;"><button type="button"
+              class="btn btn-outline-secondary btn-sm  ">Visit
+              Reel→</button></div>
+
+        </div>
+        <div style=" margin-right: 1%;display: flex; justify-content: center; padding: 1%; " id="reel">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card-noborder">
+                <img
+                  src="https://ichef.bbci.co.uk/news/976/cpsprodpb/E0F8/production/_87229575_4439b632-c04e-4129-a24d-ad07fee39ad3.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    The hidden world beneath the UK’s busiest railway station</h5>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card-noborder">
+                <img
+                  src="https://englishtribuneimages.blob.core.windows.net/gallary-content/2022/8/2022_8$largeimg_641019787.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Scientists create world's first synthetic embryos</h5>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card-noborder">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt1yhV1A1QAEfMNj8GRQOzHmsW999TpaAus0zUK2BKo-9pCNB13nkXNZJueWvAat2ywXg&usqp=CAU"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Future road is electric,Charging up the road</h5>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div style=" margin-left: 1%; margin-right: 1%; inherits: none;">
+    <h4 style="margin-top: 2%; border-left: #f40303 solid; padding: 1%;">India News</h4>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card-noborder">
+          <img
+            src="https://ichef.bbci.co.uk/news/976/cpsprodpb/3D1A/production/_131124651_gettyimages-1656851577.jpg.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              How India-Canada ties descended into a public feud</h5>
+            <p class="card-text">Canada: How ties with India soured over Hardeep Singh Nijjar killing</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-noborder">
+          <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/EBE8/production/_131129306_sunak_biden_getty.png.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Why Western nations fear India-Canada row</h5>
+            <p class="card-text">Hardeep Singh Nijjar: Why Western nations fear India-Canada row/p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-noborder">
+          <img
+            src="https://ichef.bbci.co.uk/news/976/cpsprodpb/5264/production/_131129012_8cc24a1cedcc5787bd014c1956a10394d322b92e0_0_6180_37611000x609.jpg.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Anger in India as Trudeau points finger over murder</h5>
+            <p class="card-text">Memories of the decade-long armed Sikh insurgency - which peaked in the 1980s and in
+              which thousands of people died - remain strong in India.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="margin-left: 1%;  margin-right: 1%;">
+    <div style="margin-top: 2%; height: 20%; border-radius: 5px;  ">
+      <div style="display: flex; justify-content: space-between; ">
+        <div>
+          <h1>Future Planet</h1>
+          <p>The most amazing videos from the BBC</p>
+        </div>
+        <div style="margin-top: 1%;"><button type="button" class="btn btn-outline-success btn-sm  ">Visit
+            Future Planet→</button></div>
+
+      </div>
+      <div class="futer-planet" style=" display: flex; justify-content: center; padding: 1%; " id="reel">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card-noborder">
+              <img src="https://ychef.files.bbci.co.uk/1600x900/p0gd3146.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">
+                  How sponges help Zanzibar women</h5>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-noborder">
+              <img src="https://ychef.files.bbci.co.uk/1600x900/p0g9lvyb.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Why your laptop is a gold mine</h5>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-noborder">
+              <img src="https://ychef.files.bbci.co.uk/1600x900/p0gbm9my.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Florida's first hurricane-proof town</h5>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <div>
+    <div class="row" style="margin-top: 1%; margin-left: 1%; margin-right: 1%; display: flex; justify-content: center;">
+      <div class="col-3 roe-col-md-1 bg-danger ">
+        <h5 style="font-weight: bold; color: #ffffff; margin: auto; padding: 3%;">BBC WORLD SERVICE</h5>
+      </div>
+      <div class="col-9 bg-dark" style="display: flex; align-items: center; ">
+        <svg style="color: #ffffff; cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+          fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+          <path
+            d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+          <path
+            d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+          <path
+            d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z" />
+        </svg>
+        <h5
+          style="font-weight: bold; cursor: pointer; color: #ffffff; margin-top: auto; margin-bottom: auto;margin-left: 1%; ">
+          ON AIR NEWS HOUR</h5>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="row row-cols-2 " style=" margin-left: 2%; display: flex; justify-content: center;" id="label-id">
+    <div class="pt-3 col-10" style="color: #ffffff;">
+      <div class="cols " >
+        <div class="bg bg-dark w-50 border border-text-body-secondary w-100 " style="display: flex;" >
+          <div>
+            <img style="border-radius: 50%; padding: 3%;" class="round-img"
+              src="https://ichef.bbc.co.uk/wwhp/144/ibroadcast/images/live/p0/8k/34/p08k34x5.jpg" alt="">
+          </div>
+          <div style="display: flex; flex-direction: column; justify-content: center; padding-left: 3%; cursor: pointer;">
+            <h4 class=".text-responsive">Elon Musk: Social media platform X, formerly Twitter, could go behind paywall</h4>
+            <p style="font-style: italic;">By James Clayton</p>
+          </div>
+        </div>
+      </div>
+      <div class="cols">
+        <div class="bg w-50 border border-text-body-secondary w-100"  style="display: flex; background-color: #282828;">
+          <div>
+            <img style="border-radius: 50%; padding: 3%;" class="round-img"
+              src="https://ichef.bbc.co.uk/wwhp/144/ibroadcast/images/live/p0/f6/7b/p0f67bgz.jpg" alt="">
+          </div>
+          <div style="display: flex; flex-direction: column; justify-content: center; padding-left: 3%;cursor: pointer">
+            <h4 class=".text-responsive">Trump backlash spotlights an abortion balancing act</h4>
+            <p style="font-style: italic;">By Holly Honderich</p>
+          </div>
+        </div>
+      </div>
+      <div class="cols">
+        <div class="bg bg-dark w-50 border border-text-body-secondary w-100" style="display: flex;">
+          <div>
+            <img style="border-radius: 50%; padding: 3%;" class="round-img"
+              src="https://ichef.bbc.co.uk/wwhp/144/ibroadcast/images/live/p0/2x/05/p02x05nn.jpg" alt="">
+          </div>
+          <div style="display: flex; flex-direction: column; justify-content: center; padding-left: 3%;cursor: pointer">
+            <h4 class=".text-responsive">'The nightmare is over': Americans freed by Iran</h4>
+            <p style="font-style: italic;">By Lyse Doucet</p>
+          </div>
+        </div>
+      </div>
+      <div class="cols">
+        <div class="bg w-50 border border-text-body-secondary w-100" style="display: flex; background-color: #282828;">
+          <div>
+            <img style="border-radius: 50%;padding: 3%;" class="round-img"
+              src="https://ichef.bbc.co.uk/wwhp/144/ibroadcast/images/live/p0/7z/bn/p07zbndv.jpg" alt="">
+          </div>
+          <div style="display: flex; flex-direction: column; justify-content: center; padding-left: 3%;cursor: pointer">
+            <h4 class=".text-responsive">My family buried my grandmother while ducking bullets</h4>
+            <p style="font-style: italic;">By Zeinab Mohammed Salih</p>
+          </div>
+        </div>
+      </div>
+      <div class="cols">
+        <div class="bg bg-dark w-50 border border-text-body-secondary w-100" style="display: flex;">
+          <div>
+            <img style="border-radius: 50%; padding: 3%;" class="round-img"
+              src="https://ichef.bbc.co.uk/wwhp/144/ibroadcast/images/live/p0/fd/pq/p0fdpq2x.jpg" alt="">
+          </div>
+          <div style="display: flex; flex-direction: column; justify-content: center; padding-left: 3%;cursor: pointer">
+            <h4 class=".text-responsive">Bodies left unrecognisable by Libya's floods</h4>
+            <p style="font-style: italic;">By Anna Foster</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+
+  <div style="display: flex; justify-content: space-between; margin-top: 3%;">
+    <div>
+      <div class="col">
+        <h2 style="margin-left: 1px;">BBC IN OTHER LANGUAGES</h2>
+      </div>
+    </div>
+    <div>
+      <div class="container" style="margin-top: 3%;">
+        <div class="row row-cols-auto">
+
+          <div class="col" style="display: flex; flex-direction: column; cursor: pointer;">
+            <h4>More Languages: </h4>
+            <p>Arabic عربي</p>
+            <p>Chinese 中文网</p>
+            <p>Indonesian INDONESIA</p>
+            <p>Kyrgyz Кыргыз</p>
+            <p>Persian فارسی</p>
+            <p>Somali SOMALI</p>
+            <p>Turkish TÜRKÇE</p>
+            <p>Vietnamese TIẾNG VIỆT</p>
+
+          </div>
+          <div class="col" style=" cursor: pointer;">
+            <p>Azeri AZƏRBAYCAN</p>
+            <p>French AFRIQUE</p>
+            <p>Japanese 日本語</p>
+            <p>Marathi मराठी</p>
+            <p>Portuguese BRASIL</p>
+            <p>Spanish MUNDO</p>
+            <p>Ukrainian УКРАЇНСЬКA</p>
+
+
+          </div>
+          <div class="col" style=" cursor: pointer;">
+            <p>Bangla বাংলা</p>
+            <p>Hindi हिन्दी</p>
+            <p>Tamil தமிழ்</p>
+            <p>Russian НА РУССКОМ</p>
+            <p>Urdu اردو</p>
+            <p>Uzbek O'ZBEK</p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="background-color: #4c4c4c;color: white; " class="container-fluid">
+    <div>
+      <h5 style="padding-top: 1%;">Explore the BBC</h5>
+    </div>
+    <div class="row row-cols-auto" style="display: flex; justify-content: center;">
+      <div class="col">
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>Future</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><a style="font-weight: bold;">News</a></li>
+          <li><a style="font-weight: bold;">Culture</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><a>Sports</a></li>
+          <li><a>TV</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><a>Reel</a></li>
+          <li><a>Weather</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><a>Worklife</a></li>
+          <li><a>Sounds</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><a>Travel</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div style="background-color: #4c4c4c;color: white; ">
+    <div class="footer-li">
+
+      <li>Terms of Use</li>
+      <li>About the BBC</li>
+      <li>Privacy Policy </li>
+      <li>Cookies </li>
+      <li>Accessibility Help </li>
+      <li>Parental Guidance </li>
+      <li>Contact the BBC </li>
+      <li>BBC emails for you </li>
+      <li>Advertise with us </li>
+      <li>Do not share or sell my info</li>
+    </div>
+    <h6 style="padding-bottom: 2%; padding-top: 2%; padding-left: 2%; ">Copyright © 2023 BBC. The BBC is not responsible
+      for the content of external sites. <u style="cursor: pointer;">about our approach to external linking.</u> </h6>
+
+  </div>
+
+
+  
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
